@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  background: #bbda4b;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 500px;
+}
+
+/* Smaller form width and center it */
+.bmi-form {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin: 1rem 0;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0;
+  margin-top: 1.2rem;
+  background-color: #2f396d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.result-box {
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.1rem;
+  animation: fadeIn 0.4s ease-in;
+  text-align: left;
+}
+
+/* Neat rows for result labels and values */
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.6rem 0;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.advice-row {
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+.advice-row .label {
+  margin-bottom: 0.3rem;
+}
+
+.result-box h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+/* Status-specific background colors */
+.result-box.underweight {
+  background-color: #039be5;
+}
+
+.result-box.normal {
+  background-color: #43a047;
+}
+
+.result-box.overweight {
+  background-color: #fbc02d;
+  color: black;
+}
+
+.result-box.obese {
+  background-color: #e53935;
+}
+
+.submit-btn {
+  background-color: #37474f;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.4rem;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #263238;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
